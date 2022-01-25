@@ -1,4 +1,4 @@
-// dad joke fetch and funciton
+// dad joke fetch and function
 //const apiUrl = "https://icanhazdadjoke.com";
 
 //var getApi = function () {
