@@ -19,9 +19,29 @@
     </header>
 
     <!-- main section -->
-    <div id="main-content" class="container-fluid d-small-flex">
-
-    </div>
+    <main class="col-12 d-flex flex-column">
+        <div class="row justify-content-around">
+            <div id="joke-main" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Dadz Joke</h4>
+                    <ul id="dad-joke" class="text-center text-dark"></ul>
+                    <button id="yodaBtn" class="btn btn-block btn-yoda">Get Yoda'd!</button>
+                </div>
+            </div>
+            <div id="yoda-lang" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Yoda'd Joke</h4>
+                    <ul id="yoda-joke" class="text-center text-dark"></ul>
+                </div>
+            </div>
+            <div id="favorites" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Add to Favorites</h4>
+                    <button id="favBtn" class="btn btn-block btn-add">SAVE ME!!</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- footer -->
     <footer class="bg-transparent mt-auto d-small-flex">
