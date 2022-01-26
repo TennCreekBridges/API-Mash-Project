@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Clever Working Title</title>
 </head>
@@ -13,18 +16,39 @@
 <body>
     <!-- header -->    
     <header>
-        <h1 class="text-bold text-center text-success">Something Fancy</h1>
-            <p class="text-center font-italic text-danger">Another fancy thing</p>
+        <div class="mx-auto text-center">
+        <img src="assets/images/Yodad-Jokes-Logo.png" class="mw-100" alt="Yodad Joke Logo"/> 
+    </div>
     </header>
 
     <!-- main section -->
-    <div id="main-content" class="container-fluid d-small-flex">
-    
-    </div>
+    <main class="col-12 d-flex flex-column">
+        <div class="row justify-content-around">
+            <div id="joke-main" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Dadz Joke</h4>
+                    <ul id="dad-joke" class="text-center text-dark"></ul>
+                    <button id="yodaBtn" class="btn btn-block btn-yoda">Get Yoda'd!</button>
+                </div>
+            </div>
+            <div id="yoda-lang" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Yoda'd Joke</h4>
+                    <ul id="yoda-joke" class="text-center text-dark"></ul>
+                </div>
+            </div>
+            <div id="favorites" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Add to Favorites</h4>
+                    <button id="favBtn" class="btn btn-block btn-add">SAVE ME!!</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- footer -->
     <footer class="bg-transparent mt-auto d-small-flex">
-        <h3 class="text-center text-bold text-primary"><i class="fa fa-asl-interpreting p-2"></i>Made with pride by Bridgett, Julieta, & Josh
+        <h3 class="text-center"><i class="fa fa-asl-interpreting p-2"></i>Made with pride by Bridgett, Julieta, & Josh
         <br>
         &copy 2022 Flying Blind, Inc.<i class="fa fa-blind p-2"></i>
         </h3>
