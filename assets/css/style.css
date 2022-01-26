@@ -1,0 +1,17 @@
+
+:root {
+    --green: #41ff22;
+}
+
+body {
+    background-image: url("/assets/images/space-bg.jpg");
+    color: var(--green);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: .8;
+    
+  }
+
+img {
+    width: 75%;
+}
