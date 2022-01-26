@@ -1,3 +1,6 @@
 # API-Mash-Project
-As a fun, hip parent,
-I want a way to connect with my Star Wars loving kids.
+
+As a fun, hip, jokester
+I want a way to entertain my Star Wars loving peeps
+So I will always be the life of the party!
+
