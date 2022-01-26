@@ -1,25 +1,34 @@
-// dad joke fetch and function
-//const apiUrl = "https://icanhazdadjoke.com";
+// globals
 
-//var getApi = function () {
-    //fetch("https://icanhazdadjoke.com/", {
-        //headers: {
-          //Accept: "application/json"
-       // }
-      //})
-    //.then((response) => response.json())
-    //.then((data) => console.log(data))
-    //.catch((error) => console.log(error));
-//};
-//getApi();
+
+// dad joke fetch and function
+const dadApiUrl = "https://icanhazdadjoke.com";
+
+var getDadApi = function () {
+    fetch(dadApiUrl, {
+        headers: {
+          Accept: "application/json"
+        }
+      })
+    .then(function(response) {
+      if (response.ok) {
+        console.log(response);
+        response.json().then(function(data) {
+          console.log(data);
+        })
+      }
+    })
+};
+
+getDadApi();
 
 // Yoda fetch and function
-//const apiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
+//const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
 
-//var getApi = function () {
+//var getYodaApi = function () {
     //fetch('http://yoda-api.appspot.com/api/v1/yodish')
    // .then((response) => response.json())
    // .then((data) => console.log(data));
 //}
 
-//getApi();
+//getYodaApi();
