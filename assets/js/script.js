@@ -20,15 +20,21 @@ var getDadApi = function () {
     })
 };
 
-getDadApi();
+//getDadApi();
 
-// Yoda fetch and function
-//const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
+//Yoda fetch and function
+const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
 
-//var getYodaApi = function () {
-    //fetch('http://yoda-api.appspot.com/api/v1/yodish')
-   // .then((response) => response.json())
-   // .then((data) => console.log(data));
-//}
+var getYodaApi = function () {
+  fetch("http://api.funtranslations.com/translate/yoda?text=")
+  .then(function(response) {
+    if (response.ok) {
+      console.log(response);
+      response.json().then(function(data) {
+        console.log(data);
+      })
+    }
+  })
+};
 
-//getYodaApi();
+getYodaApi();
