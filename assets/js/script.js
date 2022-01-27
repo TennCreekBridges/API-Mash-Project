@@ -2,6 +2,8 @@
 var dadJokeEl = document.querySelector("#dad-joke");
 var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
+var favButtonEl = document.querySelector("#favBtn");
+var favJoke = {};
 
 // dad joke fetch and function
 const dadApiUrl = "https://icanhazdadjoke.com";
@@ -24,7 +26,7 @@ var getDadApi = function () {
 
 getDadApi();
 
-//Yoda fetch and function
+// Yoda fetch and function
 const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
 
 var getYodaApi = function () {
@@ -44,9 +46,15 @@ var getYodaApi = function () {
   })
 };
 
-//(how to store the joke) or dadJokeEl.textContent
+// save Favorites to localStorage
+var saveFavorites = function () {
+  localStorage.setItem("favJoke", (yodaJokeEl.textContent)); 
+  console.log("saved");
+};
 
-//create eventListener that contains call function below
+
+// eventListener for Get Yoda'd button
 yodaButtonEl.addEventListener("click", getYodaApi);
 
-//getYodaApi();
+// event listener for SAVE ME button
+favButtonEl.addEventListener("click", saveFavorites);
