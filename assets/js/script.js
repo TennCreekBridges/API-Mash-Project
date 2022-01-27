@@ -1,5 +1,6 @@
 // globals
 var dadJokeEl = document.querySelector("#dad-joke");
+var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
 
 // dad joke fetch and function
@@ -14,7 +15,7 @@ var getDadApi = function () {
     .then(function(response) {
       if (response.ok) {
         response.json().then(function(data) {
-         console.log(data);
+         console.log(data.joke);
           dadJokeEl.textContent = data.joke;
         })
       }
@@ -31,14 +32,16 @@ var getYodaApi = function (joke) {
   .then(function(response) {
     if (response.ok) {
       response.json().then(function(data) {
+        var yodaJoke = dadJokeEl.textContent;
         console.log(data);
-        console.log(joke);
+        console.log(yodaJoke);
+        yodaJokeEl.textContent = data.contents;
       })
     }
   })
 };
 
-//dadJokeEl.value (how to store the joke) or dadJokeEl.textContent
+//(how to store the joke) or dadJokeEl.textContent
 
 //create eventListener that contains call function below
 yodaButtonEl.addEventListener("click", getYodaApi);
