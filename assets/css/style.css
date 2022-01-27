@@ -72,7 +72,12 @@ h4 {
     box-shadow: 0 0 15px var(--green);
 }
 
-
 p {
     margin-bottom: 0 !important;
 }
+
+@media (min-width: 768px) {
+    img {
+      width: 75%;
+    }
+  }
