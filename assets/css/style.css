@@ -16,21 +16,13 @@ img {
     width: 85%;
 }
 
-.btn-add, .btn-yoda {
+.btn-add, .btn-yoda, .btn-reset {
   background-color: black;
   border: var(--green) 2px solid;
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
 }
-
-.btn-reset {
-    background-color: black;
-    border: var(--green) 2px solid;
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
 
 .btn-add:hover {
     background-color: var(--green);
@@ -75,6 +67,11 @@ h4 {
     border-right: var(--green) 2px solid;
     border-left: var(--green) 2px solid;
 }
+
+.card {
+    box-shadow: 0 0 15px var(--green);
+}
+
 
 p {
     margin-bottom: 0 !important;
