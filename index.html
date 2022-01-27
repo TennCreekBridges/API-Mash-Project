@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- adds bootstrap & font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- adds google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- adds favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- adds stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Clever Working Title</title>
 </head>
@@ -19,9 +35,29 @@
     </header>
 
     <!-- main section -->
-    <div id="main-content" class="container-fluid d-small-flex">
-
-    </div>
+    <main class="col-12 d-flex flex-column">
+        <div class="row justify-content-around">
+            <div id="joke-main" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Dadz Joke</h4>
+                    <p id="dad-joke" class="text-center text-dark p-4"></p>
+                    <button id="yodaBtn" class="btn btn-block btn-yoda">Get Yoda'd!</button>
+                </div>
+            </div>
+            <div id="yoda-lang" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Yoda'd Joke</h4>
+                    <p id="yoda-joke" class="text-center text-dark"></p>
+                </div>
+            </div>
+            <div id="favorites" class="col-12 col-md-6 col-xl-4 mb-3">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Add to Favorites</h4>
+                    <button id="favBtn" class="btn btn-block btn-add">SAVE ME!!</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- footer -->
     <footer class="bg-transparent mt-auto d-small-flex">

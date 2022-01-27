@@ -1,25 +1,41 @@
+// globals
+var dadJokeEl = document.querySelector("#dad-joke");
+
 // dad joke fetch and function
-//const apiUrl = "https://icanhazdadjoke.com";
+const dadApiUrl = "https://icanhazdadjoke.com";
 
-//var getApi = function () {
-    //fetch("https://icanhazdadjoke.com/", {
-        //headers: {
-          //Accept: "application/json"
-       // }
-      //})
-    //.then((response) => response.json())
-    //.then((data) => console.log(data))
-    //.catch((error) => console.log(error));
-//};
-//getApi();
+var getDadApi = function () {
+    fetch(dadApiUrl, {
+        headers: {
+          Accept: "application/json"
+        }
+      })
+    .then(function(response) {
+      if (response.ok) {
+        response.json().then(function(data) {
+         console.log(data);
+           var listJoke = document.createElement('p');
+           listJoke.textContent = data.joke;
+           dadJokeEl.appendChild(listJoke);
+        })
+      }
+    })
+};
 
-// Yoda fetch and function
-//const apiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
+getDadApi();
 
-//var getApi = function () {
-    //fetch('http://yoda-api.appspot.com/api/v1/yodish')
-   // .then((response) => response.json())
-   // .then((data) => console.log(data));
-//}
+//Yoda fetch and function
+const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
 
-//getApi();
+var getYodaApi = function () {
+  fetch("http://api.funtranslations.com/translate/yoda?text=")
+  .then(function(response) {
+    if (response.ok) {
+      response.json().then(function(data) {
+        console.log(data);
+      })
+    }
+  })
+};
+
+//getYodaApi();
