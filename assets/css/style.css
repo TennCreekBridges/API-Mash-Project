@@ -33,15 +33,15 @@ img {
   }
 
 .btn-add:hover {
-    color: var(--green);
+    background-color: var(--green);
 }
 
 .btn-yoda:hover {
-    color: var(--green);
+    background-color: var(--green);
 }
 
 .btn-reset:hover {
-    color: var(--green);
+    background-color: var(--green);
 }
 
 h3 {
@@ -72,6 +72,8 @@ h4 {
 .card-content {
     background-color: black;
     color: white !important;
+    border-right: var(--green) 2px solid;
+    border-left: var(--green) 2px solid;
 }
 
 p {
