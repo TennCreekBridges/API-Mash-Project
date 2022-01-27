@@ -1,6 +1,6 @@
 
 :root {
-    --green: #41ff22;
+    --green: #44dd2b;
 }
 
 body {
@@ -38,4 +38,12 @@ h4 {
 
 .d-flex {
     display: block !important;
+}
+
+.bg-dark {
+    background-color: var(--green) !important;
+}
+
+.text-dark {
+    color: black !important;
 }
