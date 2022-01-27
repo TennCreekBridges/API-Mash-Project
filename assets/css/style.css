@@ -8,7 +8,7 @@ body {
     color: var(--green);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    line-height: .8;
+    line-height: 1.2;
     
   }
 
@@ -25,4 +25,13 @@ img {
   color: antiquewhite;
   font-size: 20px;
   font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    text-align: center;
 }
