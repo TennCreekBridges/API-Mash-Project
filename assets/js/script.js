@@ -27,15 +27,18 @@ getDadApi();
 //Yoda fetch and function
 const yodaApiUrl = "http://yoda-api.appspot.com/api/v1/yodish";
 
-var getYodaApi = function (joke) {
-  fetch(`http://api.funtranslations.com/translate/yoda?text=${joke}`)
+var getYodaApi = function () {
+  var dadJoke = dadJokeEl.textContent;
+  fetch("http://api.funtranslations.com/translate/yoda?text=" + dadJoke, {
+    headers: {
+    'X-FunTranslations-Api-Secret':'mPqv2MIF19lKUc1Ie24R5geF'
+  }
+})
   .then(function(response) {
     if (response.ok) {
       response.json().then(function(data) {
-        var yodaJoke = dadJokeEl.textContent;
         console.log(data);
-        console.log(yodaJoke);
-        yodaJokeEl.textContent = data.contents;
+        yodaJokeEl.textContent = data.contents.translated;
       })
     }
   })
