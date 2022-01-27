@@ -7,19 +7,19 @@ var yodaButtonEl = document.querySelector("#yodaBtn");
 const dadApiUrl = "https://icanhazdadjoke.com";
 
 var getDadApi = function () {
-    fetch(dadApiUrl, {
-        headers: {
-          Accept: "application/json"
-        }
-      })
-    .then(function(response) {
-      if (response.ok) {
-        response.json().then(function(data) {
-         console.log(data.joke);
-          dadJokeEl.textContent = data.joke;
-        })
+  fetch(dadApiUrl, {
+      headers: {
+        Accept: "application/json"
       }
     })
+  .then(function(response) {
+    if (response.ok) {
+      response.json().then(function(data) {
+        console.log(data.joke);
+        dadJokeEl.textContent = data.joke;
+      })
+    }
+  })
 };
 
 getDadApi();
