@@ -46,12 +46,15 @@ var getYodaApi = function () {
   })
 };
 
-// save Favorites to localStorage
-var saveFavorites = function () {
-  localStorage.setItem("favJoke", (yodaJokeEl.textContent)); 
-  console.log("saved");
+var saveFavorites = function() {
+  var savedJokes = JSON.parse(localStorage.getItem("favJoke"));
+    if (savedJokes === null) {
+      savedJokes = [];
+    }
+    savedJokes.push(yodaJokeEl.textContent);
+    localStorage.setItem("favJoke", JSON.stringify(savedJokes));
+    console.log(localStorage.getItem("favJoke"));
 };
-
 
 // eventListener for Get Yoda'd button
 yodaButtonEl.addEventListener("click", getYodaApi);
