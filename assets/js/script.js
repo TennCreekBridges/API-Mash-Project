@@ -1,4 +1,5 @@
 // globals
+var jokeButtonEl = document.querySelector("#jokeGenBtn");
 var dadJokeEl = document.querySelector("#dad-joke");
 var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
@@ -23,8 +24,6 @@ var getDadApi = function () {
     }
   })
 };
-
-getDadApi();
 
 // Yoda fetch and function
 const yodaApiUrl = "https://yoda-api.appspot.com/api/v1/yodish";
@@ -53,15 +52,19 @@ var saveFavorites = function() {
     if (savedJokes === null) {
       savedJokes = [];
     }
-    savedJokes.push(yodaJokeEl.textContent);
-    localStorage.setItem("favJoke", JSON.stringify(savedJokes));
-    console.log(localStorage.getItem("favJoke"));
+    var favJoke = yodaJokeEl.textContent;
+    savedJokes.push(favJoke);
+    localStorage.setItem("joke", JSON.stringify(savedJokes));
+    console.log(localStorage.getItem("joke"));
     // display localStorage array in Favorite Yoda'd Jokes column
     favArrayEl.textContent = savedJokes;
 };
 
+// eventListener for Generate Joke button
+jokeButtonEl.addEventListener("click", getDadApi);
+
 // eventListener for Get Yoda'd button
 yodaButtonEl.addEventListener("click", getYodaApi);
 
-// event listener for SAVE ME button
+// eventListener for SAVE ME button
 favButtonEl.addEventListener("click", saveFavorites);
