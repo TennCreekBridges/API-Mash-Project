@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("/assets/images/space-bg.jpg");
+    background-image: url("https://tenncreekbridges.github.io/API-Mash-Project//assets/images/space-bg.jpg");
     color: var(--green);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
