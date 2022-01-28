@@ -4,6 +4,7 @@ var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
 var favButtonEl = document.querySelector("#favBtn");
 var favArrayEl = document.querySelector("#favorite-joke");
+var resetButtonEl = document.querySelector("#resetBtn");
 
 // dad joke fetch and function
 const dadApiUrl = "https://icanhazdadjoke.com";
@@ -60,8 +61,19 @@ var saveFavorites = function() {
     favArrayEl.textContent = savedJokes;
 };
 
+// reset everything
+// var resetAll = function() {
+
+// }
+// document.getElementById("reset").onclick = function() {
+//   document.getElementById("resetBtn").value = "";
+// };
+
 // eventListener for Get Yoda'd button
 yodaButtonEl.addEventListener("click", getYodaApi);
 
 // event listener for SAVE ME button
 favButtonEl.addEventListener("click", saveFavorites);
+
+// // eventListener for Reset everything, you will! button
+// resetButtonEl.addEventListener("click", resetAll);
