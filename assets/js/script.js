@@ -48,7 +48,7 @@ var getYodaApi = function () {
 
 // save favorited jokes to array in localStorage
 var saveFavorites = function() {
-  var savedJokes = JSON.parse(localStorage.getItem("favJoke"));
+  var savedJokes = JSON.parse(localStorage.getItem("joke"));
     if (savedJokes === null) {
       savedJokes = [];
     }
@@ -66,5 +66,5 @@ jokeButtonEl.addEventListener("click", getDadApi);
 // eventListener for Get Yoda'd button
 yodaButtonEl.addEventListener("click", getYodaApi);
 
-// eventListener for SAVE ME button
+// eventListener for Add to Favorites button
 favButtonEl.addEventListener("click", saveFavorites);
