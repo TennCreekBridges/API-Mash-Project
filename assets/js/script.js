@@ -40,12 +40,14 @@ var getYodaApi = function () {
     if (response.ok) {
       response.json().then(function(data) {
         console.log(data);
+        // save translated jokes to Yoda'd Joke column
         yodaJokeEl.textContent = data.contents.translated;
       })
     }
   })
 };
 
+// save favorited jokes to array in localStorage
 var saveFavorites = function() {
   var savedJokes = JSON.parse(localStorage.getItem("favJoke"));
     if (savedJokes === null) {
@@ -54,6 +56,7 @@ var saveFavorites = function() {
     savedJokes.push(yodaJokeEl.textContent);
     localStorage.setItem("favJoke", JSON.stringify(savedJokes));
     console.log(localStorage.getItem("favJoke"));
+    // display localStorage array in Favorite Yoda'd Jokes column
     favArrayEl.textContent = savedJokes;
 };
 
