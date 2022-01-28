@@ -28,15 +28,7 @@ button {
   font-weight: bold;
 }
 
-.btn-add:hover {
-    background-color: var(--green);
-}
-
-.btn-yoda:hover {
-    background-color: var(--green);
-}
-
-.btn-reset:hover {
+.btn-style:hover {
     background-color: var(--green);
 }
 
