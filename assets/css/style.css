@@ -16,7 +16,11 @@ img {
     width: 85%;
 }
 
-.btn-add, .btn-yoda, .btn-reset, .btn-generate {
+button {
+    align-items: center;
+}
+
+.btn-style {
   background-color: black;
   border: var(--green) 2px solid;
   color: white;
