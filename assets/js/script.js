@@ -3,7 +3,7 @@ var dadJokeEl = document.querySelector("#dad-joke");
 var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
 var favButtonEl = document.querySelector("#favBtn");
-var favJoke = {};
+var favArrayEl = document.querySelector("#favorite-joke");
 
 // dad joke fetch and function
 const dadApiUrl = "https://icanhazdadjoke.com";
@@ -54,6 +54,7 @@ var saveFavorites = function() {
     savedJokes.push(yodaJokeEl.textContent);
     localStorage.setItem("favJoke", JSON.stringify(savedJokes));
     console.log(localStorage.getItem("favJoke"));
+    favArrayEl.textContent = savedJokes;
 };
 
 // eventListener for Get Yoda'd button
