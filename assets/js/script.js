@@ -66,7 +66,6 @@ var resetAll = function () {
   yodaJokeEl.textContent = "";
   dadJokeEl.textContent = "";
   favArrayEl.textContent = "";
-  console.log(yodaJokeEl.textContent);
   localStorage.clear();
   console.log("cleared saved data");
 };
