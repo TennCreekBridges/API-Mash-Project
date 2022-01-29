@@ -57,7 +57,7 @@ var saveFavorites = function() {
     savedJokes.push(favJoke);
     localStorage.setItem("joke", JSON.stringify(savedJokes));
     console.log(localStorage.getItem("joke"));
-    // display localStorage array in Favorite Yoda'd Jokes column
+    // display localStorage array in Favorite Yoda'd Jokes column with line breaks
     favArrayEl.innerHTML = savedJokes.join("<br/><br/>");
     console.log(savedJokes.join);
 }; 
