@@ -17,7 +17,7 @@ You even have the ability to save your favorite Yoda'd dad jokes by clicking "Ad
 Hit the "Reset everything, you will!" button to reset.
 
 ## TECHNOLOGIES
-This project features HTML, CSS, JavaScript, Bootstrap, JQuery, FontAwesome, Google Fonts and Favicon.
+This project features HTML, CSS, JavaScript, Bootstrap, FontAwesome, and Google Fonts.
 
 ## SOURCES
 Funtranslations: https://yoda-api.appspot.com/api/v1/yodish and https://icanhazdadjoke.com.
