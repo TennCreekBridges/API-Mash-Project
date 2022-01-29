@@ -5,6 +5,7 @@ var yodaJokeEl = document.querySelector("#yoda-joke");
 var yodaButtonEl = document.querySelector("#yodaBtn");
 var favButtonEl = document.querySelector("#favBtn");
 var favArrayEl = document.querySelector("#favorite-joke");
+var resetButtonEl = document.querySelector("#resetBtn");
 
 // dad joke fetch and function
 const dadApiUrl = "https://icanhazdadjoke.com";
@@ -60,6 +61,12 @@ var saveFavorites = function() {
     favArrayEl.textContent = savedJokes.join("; ");
 };
 
+// reset localStorage function
+var resetAll = function () {
+  localStorage.clear();
+  console.log("cleared saved data");
+};
+
 // eventListener for Generate Joke button
 jokeButtonEl.addEventListener("click", getDadApi);
 
@@ -68,3 +75,6 @@ yodaButtonEl.addEventListener("click", getYodaApi);
 
 // eventListener for Add to Favorites button
 favButtonEl.addEventListener("click", saveFavorites);
+
+// eventListener for Reset button
+resetButtonEl.addEventListener("click", resetAll);
