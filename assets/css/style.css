@@ -89,5 +89,6 @@ p {
       
       .btn-style:hover {
           background-color: black;
+          color: var(--green);
       }
   }
