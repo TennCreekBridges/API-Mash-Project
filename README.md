@@ -20,7 +20,7 @@ Hit the "Reset everything, you will!" button to reset.
 This project features HTML, CSS, JavaScript, Bootstrap, JQuery, FontAwesome, Google Fonts and Favicon.
 
 ## SOURCES
-Funtranslations and https://icanhazdadjoke.com.
+Funtranslations: https://yoda-api.appspot.com/api/v1/yodish and https://icanhazdadjoke.com.
 
 
 ## SCREENSHOT
