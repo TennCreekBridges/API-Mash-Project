@@ -11,6 +11,7 @@ var resetButtonEl = document.querySelector("#resetBtn");
 const dadApiUrl = "https://icanhazdadjoke.com";
 
 var getDadApi = function () {
+  // delete content of previous Yoda'd Joke each time the Generate Joke button is clicked
   yodaJokeEl.textContent = "";
   fetch(dadApiUrl, {
       headers: {
@@ -61,6 +62,9 @@ var saveFavorites = function() {
     // display localStorage array in Favorite Yoda'd Jokes column with line breaks
     favArrayEl.innerHTML = savedJokes.join(`"<br/><hr color="#44dd2b">"`);
     console.log(savedJokes.join);
+    // delete content of DadzJoke and Yoda'd Joke columns when Add to Favorites button is clicked 
+    yodaJokeEl.textContent = "";
+    dadJokeEl.textContent = "";
 }; 
 
 // reset localStorage function
