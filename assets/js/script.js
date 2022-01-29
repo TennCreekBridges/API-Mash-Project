@@ -11,6 +11,7 @@ var resetButtonEl = document.querySelector("#resetBtn");
 const dadApiUrl = "https://icanhazdadjoke.com";
 
 var getDadApi = function () {
+  yodaJokeEl.textContent = "";
   fetch(dadApiUrl, {
       headers: {
         Accept: "application/json"
