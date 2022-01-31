@@ -58,10 +58,8 @@ var saveFavorites = function() {
     var favJoke = yodaJokeEl.textContent;
     savedJokes.push(favJoke);
     localStorage.setItem("joke", JSON.stringify(savedJokes));
-    console.log(localStorage.getItem("joke"));
     // display localStorage array in Favorite Yoda'd Jokes column with line breaks
     favArrayEl.innerHTML = savedJokes.join(`"<br/><hr color="#44dd2b">"`);
-    console.log(savedJokes.join);
     // delete content of DadzJoke and Yoda'd Joke columns when Add to Favorites button is clicked 
     yodaJokeEl.textContent = "";
     dadJokeEl.textContent = "";
