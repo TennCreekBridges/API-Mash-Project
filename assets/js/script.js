@@ -42,13 +42,6 @@ var getYodaApi = function () {
     if (response.ok) {
       response.json().then(function(data) {
         console.log(data);
-        // error modal if translate button is clicked before generating a joke
-        if (dadJoke === "") {
-          $("#error-modal").modal, function () {
-            $("#modalTaskDescription").trigger("focus");
-            return;
-          }
-        };
         // save translated jokes to Yoda'd Joke column
         yodaJokeEl.textContent = data.contents.translated;
       })
@@ -63,6 +56,11 @@ var saveFavorites = function() {
       savedJokes = [];
     }
     var favJoke = yodaJokeEl.textContent;
+    // kickback if user fails to generate a joke prior to clicking Get Yoda'd button
+    if (favJoke === "") {
+      console.log("error");
+      return;
+    };
     savedJokes.push(favJoke);
     localStorage.setItem("joke", JSON.stringify(savedJokes));
     // display localStorage array in Favorite Yoda'd Jokes column with line breaks
