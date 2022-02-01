@@ -33,6 +33,10 @@ const yodaApiUrl = "https://yoda-api.appspot.com/api/v1/yodish";
 
 var getYodaApi = function () {
   var dadJoke = dadJokeEl.textContent;
+    if (dadJoke === "") {
+      $("#error-modal").modal("show");
+    } else {
+  };
   fetch("https://api.funtranslations.com/translate/yoda?text=" + dadJoke, {
     headers: {
     'X-FunTranslations-Api-Secret':'mPqv2MIF19lKUc1Ie24R5geF'
