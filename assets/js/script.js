@@ -33,6 +33,7 @@ const yodaApiUrl = "https://yoda-api.appspot.com/api/v1/yodish";
 
 var getYodaApi = function () {
   var dadJoke = dadJokeEl.textContent;
+    // error modal triggers if Get Yoda'd button clicked without generating joke first
     if (dadJoke === "") {
       $("#error-modal").modal("show");
     } else {
