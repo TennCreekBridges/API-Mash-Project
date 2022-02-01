@@ -3,19 +3,26 @@
     --green: #44dd2b;
 }
 
+/* main body styles */
 body {
     background-image: url("https://tenncreekbridges.github.io/API-Mash-Project/assets/images/space-bg.jpg");
     color: var(--green);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    line-height: 1.2;
-    
+    line-height: 1.2; 
   }
 
+/* sets yoda logo width */
 img {
     width: 85%;
 }
 
+/* sets basic paragraph text style */
+p {
+    margin-bottom: 0 !important;
+}
+
+/* set styles for buttons  */
 button {
     align-items: center;
 }
@@ -32,6 +39,11 @@ button {
     background-color: var(--green);
 }
 
+/* set styles & sizing for heading sizes */
+h2 {
+    font-size: 1.7rem;
+}
+
 h3 {
     font-size: 1rem;
 }
@@ -41,10 +53,12 @@ h4 {
     text-align: center;
 }
 
+/* allows buttons to be centered */
 .d-flex {
     display: block !important;
 }
 
+/* set card styles  */
 .bg-dark {
     background-color: black !important;
     border: var(--green) 2px solid;
@@ -68,27 +82,60 @@ h4 {
     box-shadow: 0 0 15px var(--green);
 }
 
-p {
-    margin-bottom: 0 !important;
+/* set modal styles */
+.modal-header {
+    display: inline-block;
+    border: var(--green) 2px solid !important;
+    box-shadow: 0 0 15px var(--green);
+    color: white;
+    padding-bottom: 35px;
 }
 
+.modal-content {
+    text-align: center;
+    background-color:black;
+    border: var(--green) 2px solid !important;
+    box-shadow: 0 0 15px var(--green);
+    color: white;
+}
+
+.modal-footer {
+    border: var(--green) 2px solid !important;
+    box-shadow: 0 0 15px var(--green);
+}
+
+/* sets modal button styles */
+.btn-close {
+    color: white;
+    border: white 2px solid;
+    box-shadow: 0 0 15px white;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.btn-close:hover {
+    background-color: white;
+    color: black;
+}
+
+/* sets media queries */
 @media (min-width: 768px) {
     img {
       width: 75%;
     }
   }
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .btn-style {
         background-color: var(--green);
         border: var(--green) 2px solid;
         color: black;
         font-size: 1.25rem;
         font-weight: bold;
-      }
+    }
       
-      .btn-style:hover {
+    .btn-style:hover {
           background-color: black;
           color: var(--green);
-      }
+    }
   }
