@@ -17,14 +17,14 @@ You even have the ability to save your favorite Yoda'd dad jokes by clicking "Ad
 Hit the "Reset everything, you will!" button to reset.
 
 ## TECHNOLOGIES
-This project features HTML, CSS, JavaScript, Bootstrap, FontAwesome, and Google Fonts.
+This project features HTML, CSS, JavaScript, jQuery, Bootstrap, FontAwesome, and Google Fonts.
 
 ## SOURCES
 Funtranslations: https://yoda-api.appspot.com/api/v1/yodish and https://icanhazdadjoke.com.
 
 
 ## SCREENSHOT
-![image](https://user-images.githubusercontent.com/95149604/151483276-ab2d6655-c1c1-466b-a35a-5ab146411e6a.png)
+![image](https://user-images.githubusercontent.com/95149604/152087563-9db66b11-f5fc-4e08-a5fd-25ef78f9afeb.png)
 
 ## LINK 
 Application can be found here: https://tenncreekbridges.github.io/API-Mash-Project/
