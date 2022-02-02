@@ -118,6 +118,16 @@ h4 {
     color: black;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+	color: #fff;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+ text-decoration: none;
+}
+
 /* sets media queries */
 @media (min-width: 768px) {
     img {
