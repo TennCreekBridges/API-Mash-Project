@@ -29,7 +29,7 @@ var getDadApi = function () {
 };
 
 // Yoda fetch and function
-const yodaApiUrl = "https://yoda-api.appspot.com/api/v1/yodish";
+const yodaApiUrl = "https://api.funtranslations.com/translate/yoda?text=";
 
 var getYodaApi = function () {
   var dadJoke = dadJokeEl.textContent;
@@ -38,7 +38,7 @@ var getYodaApi = function () {
       $("#error-modal").modal("show");
     } else {
   };
-  fetch("https://api.funtranslations.com/translate/yoda?text=" + dadJoke, {
+  fetch(yodaApiUrl + dadJoke, {
     headers: {
     'X-FunTranslations-Api-Secret':'mPqv2MIF19lKUc1Ie24R5geF'
   }
