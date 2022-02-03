@@ -33,6 +33,11 @@ const yodaApiUrl = "https://yoda-api.appspot.com/api/v1/yodish";
 
 var getYodaApi = function () {
   var dadJoke = dadJokeEl.textContent;
+    // error modal triggers if Get Yoda'd button clicked without generating joke first
+    if (dadJoke === "") {
+      $("#error-modal").modal("show");
+    } else {
+  };
   fetch("https://api.funtranslations.com/translate/yoda?text=" + dadJoke, {
     headers: {
     'X-FunTranslations-Api-Secret':'mPqv2MIF19lKUc1Ie24R5geF'
@@ -84,7 +89,7 @@ var playLightsaber = function () {
   document.getElementById("lsPlay").play();
 };
 
-// play 2nd lightsaber sound on Add to Favorites button click
+// play lightsaber sound on Get Yoda'd button click
 var playZoom = function () {
   document.getElementById("zoomPlay").play();
 };

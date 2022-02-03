@@ -39,7 +39,7 @@
         <div class="row justify-content-center">
             <div id="joke-main" class="col-12 col-md-6 col-xl-4 mb-4">
                 <div class="card">
-                    <h4 class="card-header bg-dark text-light">Dadz Joke</h4>
+                    <h3 class="card-header bg-dark text-light d-flex align-items-center">Dadz Joke</h3>
                     <p id="dad-joke" class="text-center text-dark p-4 card-content"></p>
                     <audio id="lsPlay" src="./assets/sounds/Star-wars-lightsaber-sound-effects.mp3"></audio>
                     <button id="yodaBtn" class="btn btn-block btn-yoda btn-style" onclick="playLightsaber()">Get Yoda'd</button>
@@ -47,7 +47,7 @@
             </div>
             <div id="yoda-lang" class="col-12 col-md-6 col-xl-4 mb-4">
                 <div class="card">
-                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Yoda'd Joke</h4>
+                    <h3 class="card-header bg-dark text-light d-flex align-items-center">Yoda'd Joke</h3>
                     <p id="yoda-joke" class="text-center text-dark p-4 card-content"></p>
                     <audio id="zoomPlay" src="./assets/sounds/long-swing.mp3"></audio>
                     <button id="favBtn" class="btn btn-block btn-add btn-style" onclick="playZoom()">Add to Favorites</button>
@@ -55,7 +55,7 @@
             </div>
             <div id="favorites" class="col-12 col-md-6 col-xl-4 mb-4">
                 <div class="card">
-                    <h4 class="card-header bg-dark text-light d-flex align-items-center">Favorite Yoda'd Jokes</h4>
+                    <h3 class="card-header bg-dark text-light d-flex align-items-center">Favorite Yoda'd Jokes</h3>
                     <p id="favorite-joke" class="text-center text-dark p-4 card-content"></p>
                     <button id="resetBtn" class="btn btn-block btn-reset btn-style">Reset Everything, You Will!</button>
                 </div>
@@ -64,15 +64,41 @@
         </div>
     </main>
 
+    <!-- Modal -->
+  <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="myModalTitle"><br>Embarrassing, this is.</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="modalTaskDescription"><br>Generate Joke first, you must.
+                  <br><br>
+                  Error modal for you, this is.
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close my-4" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- footer -->
     <footer class="bg-transparent mt-auto d-small-flex">
-        <h3 class="text-center"><i class="fa fa-asl-interpreting p-2"></i>Made with pride by Bridgett, Julieta, & Josh
+        <h4 class="text-center"><i class="fa fa-asl-interpreting p-2"></i>Made with pride by <a href="https://tenncreekbridges.github.io/vigilant-couscous/">Bridgett</a>, <a href="https://julesmcp.github.io/JMcPortfolio-swag/">Julieta</a>, & <a href="https://joshlyons225.github.io/lyons-pro-portfolio/">Josh</a>
         <br>
         &copy 2022 Flying Blind, Inc.<i class="fa fa-blind p-2"></i>
-        </h3>
+        </h4>
     </footer>
 
     <!-- script sources -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
     
 </body>
