@@ -82,7 +82,12 @@ var resetAll = function () {
 // play lightsaber sound on Get Yoda'd button click
 var playLightsaber = function () {
   document.getElementById("lsPlay").play();
-}
+};
+
+// play 2nd lightsaber sound on Add to Favorites button click
+var playZoom = function () {
+  document.getElementById("zoomPlay").play();
+};
 
 // eventListener for Generate Joke button
 jokeButtonEl.addEventListener("click", getDadApi);
