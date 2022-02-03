@@ -86,12 +86,18 @@ var resetAll = function () {
 
 // play lightsaber sound on Get Yoda'd button click
 var playLightsaber = function () {
+  if (dadJokeEl.textContent !== "") {
   document.getElementById("lsPlay").play();
+  } else {
+  }
 };
 
 // play lightsaber sound on Get Yoda'd button click
 var playZoom = function () {
+  if (yodaJokeEl.textContent !== "") {
   document.getElementById("zoomPlay").play();
+  } else {
+  }
 };
 
 // eventListener for Generate Joke button
