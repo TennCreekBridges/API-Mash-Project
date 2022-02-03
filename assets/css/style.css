@@ -58,6 +58,12 @@ h4 {
     display: block !important;
 }
 
+.card-header {
+    display: block;
+    text-align: center;
+    margin: auto 0;
+}
+
 /* set card styles  */
 .bg-dark {
     background-color: black !important;
